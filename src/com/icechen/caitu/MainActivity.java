@@ -6,6 +6,7 @@ import com.icechen.caitu.sreen.MenuScreen;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 
 public class MainActivity extends LGameAndroid2DActivity {
@@ -20,7 +21,10 @@ public class MainActivity extends LGameAndroid2DActivity {
 	@Override
 	public void onGameResumed() {
 		// TODO 自动生成的方法存根
-		
+        MenuScreen menu = new MenuScreen(this);
+
+        this.setScreen(menu); 
+
 	}
 
 	@Override
@@ -32,7 +36,7 @@ public class MainActivity extends LGameAndroid2DActivity {
           
         /* 给Activity赋予一个画面，有点类似于View */  
 
-        this.setScreen(new MenuScreen(this));  
+
 
           
 
@@ -47,8 +51,12 @@ public class MainActivity extends LGameAndroid2DActivity {
         this.setShowLogo(false);  
 
           
-
+        MenuScreen menu = new MenuScreen(this);
+        Log.v("ss", "new Menu");
+        this.setScreen(menu); 
+        Log.v("ss", "new Menu");
         this.showScreen();  
+        Log.v("ss", "new Menu");
 
 	}
 

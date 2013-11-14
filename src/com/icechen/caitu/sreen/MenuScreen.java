@@ -2,7 +2,6 @@ package com.icechen.caitu.sreen;
 
 import org.loon.framework.android.game.core.graphics.LColor;
 import org.loon.framework.android.game.core.graphics.Screen;
-import org.loon.framework.android.game.core.graphics.Touch;
 import org.loon.framework.android.game.core.graphics.device.LGraphics;
 import org.loon.framework.android.game.core.timer.LTimerContext;
 
@@ -27,27 +26,27 @@ public class MenuScreen extends Screen {
 
 	@Override
 	public void draw(LGraphics g) {
-		// TODO 自动生成的方法存根
 		Log.v("MenuScreen", "draw()函数!");
 //		g.drawClear(LColor.black);
-//		g.drawString("Hello World", 100, 100);
+		g.drawString("Hello World", 100, 100);
 	}
 
 
+
 	@Override
-	public void onTouchDown(Touch arg0) {
+	public void onTouchDown(LTouch arg0) {
 		// TODO 自动生成的方法存根
 		
 	}
 
 	@Override
-	public void onTouchMove(Touch arg0) {
+	public void onTouchMove(LTouch arg0) {
 		// TODO 自动生成的方法存根
 		
 	}
 
 	@Override
-	public void onTouchUp(Touch arg0) {
+	public void onTouchUp(LTouch arg0) {
 		// TODO 自动生成的方法存根
 		
 	}
